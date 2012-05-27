@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Book review</title>
+<link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div id="header"><span class="title">Book review</span></div>
+
+<div id="sidebar"></div>
+
+<div id="content">
+</div>
+
+<!-- Templates -->
+<script type="text/template" id="tpl-book-list-item">
+	<a href='#books/<%= id %>'><%= title %></a>
+</script>
+
+<script type="text/template" id="tpl-book-details">
+    <div>        
+        <p>Title: <%= title %></p>        
+        <p>Author: <%= author %></p>        
+        <p>Description: <%= description %></p>        
+    </div>
+	<a href="#">Go Back</a>
+</script>
+
+<!-- JavaScript -->
+<script src="lib/jquery-1.7.1.min.js"></script>
+<script src="lib/underscore-min.js"></script>
+<script src="lib/backbone-min.js"></script>
+<script src="js/main.js"></script>   
+
+</body>
+</html>
